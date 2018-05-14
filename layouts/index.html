@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MavenAire - Level Up Your Company</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+  </head>
+  <body>
+  {{ partial "nav.html" . }}
+  <section class="hero is-large hero-svg">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Time to Level Up Your Company
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-title light-grey-bg">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          A Full Channel-Agnostic Approach
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section connected-section light-grey-bg">
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <div class="card-image has-text-centered">
+            <figure class="pt-25">
+              <i class="fab fa-facebook fa-7x"></i>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content has-text-centered">
+                <h2 class="title is-4">Facebook Advertising</h2>
+              </div>
+            </div>
+            <div class="content has-text-centered">
+              Proven success in every type of campaign, whether it’s website traffic, lead capture, conversions, or app installs. We own the best tactics for achieving maximum reach and optimization of your audience. We’re constantly testing for improvements and keeping on top of changes in adtech.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-image has-text-centered">
+            <figure class="pt-25">
+              <i class="fab fa-instagram fa-7x"></i>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content has-text-centered">
+                <h2 class="title is-4">Instagram Advertising</h2>
+              </div>
+            </div>
+            <div class="content has-text-centered">
+              Establish brand loyalty and increased customer lifetime value by building a fanbase for your product or service. We will help you grow organically through influencers and community engagement, and you will see measured results through purchase conversions and ROI.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-image has-text-centered">
+            <figure class="pt-25">
+              <i class="fas fa-chart-line fa-7x"></i>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content has-text-centered">
+                <h2 class="title is-4">Performance Marketing</h2>
+              </div>
+            </div>
+            <div class="content has-text-centered">
+              We guarantee to match your KPI goals. Through data analysis and high-speed optimization, you will see your CPC, CPM, CPV, and CPAs plummet as you scale.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-image has-text-centered">
+            <figure class="pt-25">
+              <i class="fas fa-video fa-7x"></i>
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content has-text-centered">
+                <h2 class="title is-4">Content Creation</h2>
+              </div>
+            </div>
+            <div class="content has-text-centered">
+              Own the best content. Whether you’re looking for high quality videography or photography paired with the best-converting copy, our team of digital natives will ensure that you have provocative and shareable content.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-title">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          "The next hundred million dollar brands are coming out of your office."
+        </h1>
+        <h2 class="subtitle">
+          - Senior VP, Facebook
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get all "navbar-burger" elements
+      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+          $el.addEventListener('click', function () {
+            // Get the target from the "data-target" attribute
+            var target = $el.dataset.target;
+            var $target = document.getElementById(target);
+            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+            $el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+  </body>
+</html>
